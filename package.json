@@ -17,7 +17,7 @@
 		"training task"
 	],
 	"dependencies": {
-		"jquery": "3.3.1"
+		"jquery": "^3.3.1"
 	},
 	"devDependencies": {
 		"neutrino": "8.3.0",
