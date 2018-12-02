@@ -5,9 +5,9 @@ let fieldMessage = $('.message-field');
 let outputMessage = $('.message-formatted');
 
 function formattedMessage () {
-	let searchSpaceAndWrap = /\s{2,}|\n/igm;
+	let spaceAndLineEndRegExp = /\s{2,}|\n/igm;
 
-	return fieldMessage[0].value.trim().replace(searchSpaceAndWrap, ' ').toLowerCase();
+	return fieldMessage[0].value.trim().replace(spaceAndLineEndRegExp, ' ').toLowerCase();
 }
 
 fieldMessage.on('input', function () {
